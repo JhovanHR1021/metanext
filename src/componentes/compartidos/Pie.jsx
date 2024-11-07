@@ -1,6 +1,6 @@
 function Pie() {
     return (
-        <footer>
+        <footer className="text-red-300">
             <small>Desarrollado y diseñado por Jhovan HR</small>
         </footer>
      );

@@ -1,15 +1,16 @@
 import iconoSvg from './../../img/logo.svg';
 import perfilSvg from './../../img/perfil.svg';
+import './Encabezado.css'
 function Encabezado() {
     return ( 
-        <div>
-            <div>
-                <img src={iconoSvg} alt='icono de metas svg' />
-                <a href='/'>MetasNext</a>
+        <div className='encabezado'>
+            <div className='contenedor'>
+                <img className='logo' src={iconoSvg} alt='icono de metas svg' />
+                <a className='titulo' href='/'>MetasNext</a>
             </div>
-            <nav className='flex'>
+            <nav className='vinculo'>
                 <a href="/perfil">
-                    <img src={perfilSvg} alt='perfil de svg' />
+                    <img className='icono' src={perfilSvg} alt='perfil de svg' />
                 </a>
             </nav>
         </div>
