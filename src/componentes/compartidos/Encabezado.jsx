@@ -1,16 +1,16 @@
+import estilo from './Encabezado.module.css'
 import iconoSvg from './../../img/logo.svg';
 import perfilSvg from './../../img/perfil.svg';
-import './Encabezado.css'
 function Encabezado() {
     return ( 
-        <div className='encabezado'>
-            <div className='contenedor'>
-                <img className='logo' src={iconoSvg} alt='icono de metas svg' />
-                <a className='titulo' href='/'>MetasNext</a>
+        <div className={estilo.encabezado}>
+            <div className={estilo.contenedor}>
+                <img className={estilo.logo} src={iconoSvg} alt='icono de metas svg' />
+                <a className={estilo.titulo} href='/'>MetasNext</a>
             </div>
-            <nav className='vinculo'>
-                <a href="/perfil">
-                    <img className='icono' src={perfilSvg} alt='perfil de svg' />
+            <nav>
+                <a href="/perfil" className={estilo.vinculo}>
+                    <img className={estilo.icono} src={perfilSvg} alt='perfil de svg' />
                 </a>
             </nav>
         </div>
